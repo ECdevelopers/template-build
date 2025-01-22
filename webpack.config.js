@@ -5,7 +5,8 @@ const path = require("path");
 module.exports = {
   entry: {
     main: "./app/index.js",
-    vendor: "./app/vendor.js"
+    vendor: "./app/vendor.js",
+    hello: "./app/hello.js"
   },
   plugins: [
     new HtmlWebpackPlugin({
