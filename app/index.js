@@ -1,6 +1,7 @@
 import './vendor.js'
 import { buttonHandle } from "./src/buttonHandler.js";
 import css from './global.scss'
+import _ from 'lodash';
 
 
 
@@ -14,5 +15,6 @@ function component() {
 
   return element;
 }
+console.log(_.toUpper("index nih bos"))
 
 document.body.appendChild(component());
