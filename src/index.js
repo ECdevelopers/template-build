@@ -1,4 +1,5 @@
 import { buttonHandle } from "./buttonHandler";
+import css from './style/global.css'
 
 
 

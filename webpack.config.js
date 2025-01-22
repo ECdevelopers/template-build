@@ -7,5 +7,15 @@ module.exports = {
     path: path.resolve(__dirname, 'output'),
     filename: 'bundle.js',
   },
-  devtool: false
+  devtool: false,
+  module:{
+    rules: [
+      {
+        test: /\.css/i,
+        use: [
+          'style-loader','css-loader'
+        ]
+      }
+    ]
+  }
 }
