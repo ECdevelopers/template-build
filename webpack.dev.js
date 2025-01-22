@@ -9,6 +9,7 @@ module.exports = merge(config, {
   output: {
     path: path.resolve(__dirname, 'output'),
     filename: 'bundle.js',
+    assetModuleFilename: 'img/[name][ext]',
     clean: true
   },
   plugins: [new MiniCssExtractPlugin()],
