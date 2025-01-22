@@ -4,15 +4,26 @@ const path = require("path");
 
 module.exports = {
   entry: {
-    main: "./app/index.js",
-    vendor: "./app/vendor.js",
-    hello: "./app/hello.js"
+    main: {
+      import: "./app/index.js",
+      // dependOn: 'shared'
+    },
+    vendor: {
+      import: "./app/vendor.js",
+      // dependOn: 'shared'
+    },
+    // shared: "lodash"
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./app/template.html",
     }),
   ],
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
+  },
   module: {
     rules: [
       {
