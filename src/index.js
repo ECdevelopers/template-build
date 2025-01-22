@@ -1,3 +1,4 @@
+import * as bootstrap from 'bootstrap'
 import { buttonHandle } from "./buttonHandler";
 import css from './style/global.scss'
 
