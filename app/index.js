@@ -1,6 +1,6 @@
-import * as bootstrap from 'bootstrap'
-import { buttonHandle } from "./buttonHandler";
-import css from './style/global.scss'
+import './vendor.js'
+import { buttonHandle } from "./src/buttonHandler.js";
+import css from './global.scss'
 
 
 

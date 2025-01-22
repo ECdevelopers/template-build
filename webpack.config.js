@@ -1,13 +1,12 @@
-const { watch } = require("fs");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: "./app/index.js",
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/template.html",
+      template: "./app/template.html",
     }),
   ],
   module: {
