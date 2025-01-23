@@ -5,12 +5,12 @@ const config = require('./webpack.config')
 const { merge } = require('webpack-merge');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const { PurgeCSSPlugin } = require("purgecss-webpack-plugin");
+// const { PurgeCSSPlugin } = require("purgecss-webpack-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
-const PATHS = {
-  src: path.join(__dirname, "src"),
-};
+// const PATHS = {
+//   src: path.join(__dirname, "src"),
+// };
 
 module.exports = merge(config, {
   mode: 'production',
@@ -43,8 +43,8 @@ module.exports = merge(config, {
   plugins: [new MiniCssExtractPlugin({
     filename: 'main-[contenthash].css',
   }),
-  new PurgeCSSPlugin({
-    paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
-  }),
+  // new PurgeCSSPlugin({
+  //   paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
+  // }),
 ]
 })

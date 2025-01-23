@@ -1,3 +1,1 @@
-console.log(
-  "hellojs"
-)
+import './src/components/components.js'
